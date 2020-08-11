@@ -35,6 +35,39 @@ a{
 
 /*Main Items*/
 
+main{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#principal{
+  display: block;
+  position: relative;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+.contenidoimg{
+  position: absolute;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 5%;
+  width: 90%;
+  background-color: #76bec7;
+  color: black;
+  opacity: 0.4;
+}
+
+h2{opacity: none;}
+p{opacity: 1;}
+
+
+
+
 
 
 /* Tablets */
@@ -53,6 +86,13 @@ a{
     text-align: left;
   }
   /*Main Items*/
+  .contenidoimg{
+    position: absolute;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 25%;
+    width: 80%;
+  }
 
 }
 
@@ -71,4 +111,10 @@ a{
     text-align: right;
   }
   /*Main Items*/
+  .contenidoimg{
+    position: absolute;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 50%;
+  }
 }
