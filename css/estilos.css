@@ -1,6 +1,13 @@
+/*Roots*/
+:root{
+  --black:black;
+  --Topic:burlywood;
+}
+
+
 body{
-    color: burlywood;
-    background-color: black;
+    color: var(--Topic);
+    background-color: var(--black);
 }
 
 /*Header Items*/
@@ -9,13 +16,13 @@ header{
   display: block;
   width: 100%;
   text-align: center;
-  background-color: burlywood;
+  background-color: var(--Topic);
 }
 
 h1{
   width: 100%;
   display: inline-block;
-  color: black;
+  color: var(--black);
 }
 
 nav{
@@ -30,7 +37,7 @@ li{
 
 a{
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 
 /*Main Items*/
@@ -58,7 +65,7 @@ img{
   margin-top: 5%;
   width: 90%;
   background-color: #76bec7;
-  color: black;
+  color: var(--black);
   opacity: 1;
 }
 
@@ -73,7 +80,7 @@ img{
 }
 .parque{
   
-  background-color:black;
+  background-color:var(--black);
 }
 .rio{
   background-color:#101010;
@@ -88,6 +95,11 @@ img{
   display: none;
 }
 
+.imagen-principal:hover{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
 .descripcion{
   display: block;
   width: 100%;
@@ -96,6 +108,11 @@ img{
 .imagen-secundaria{
   display: block;
   width: 100%;  
+}
+
+.imagen-secundaria:hover{
+  -webkit-filter: hue-rotate(45deg);
+  filter: hue-rotate(45deg);
 }
 
 /*Footer*/
@@ -124,7 +141,7 @@ textarea{
 button{
   width: 150px;
   height: 30px;
-  background-color: burlywood;
+  background-color: var(--Topic);
   border-radius: 10%;
 }
 
@@ -133,15 +150,15 @@ button{
   padding: 10px;
   font-weight: 600;
   font-size: 20px;
-  color: black;
-  background-color: burlywood;
+  color: var(--black);
+  background-color: var(--Topic);
   border-radius: 6px;
   border: 2px solid darkgray;
 }
 
 .botonp:hover{
-  color: burlywood;
-  background-color: black;
+  color: var(--Topic);
+  background-color: var(--black);
 }
 
 /* Tablets */
