@@ -34,7 +34,7 @@ a{
 }
 
 /*Main Items*/
-
+/*Principal Item*/
 main{
   display: block;
   width: 100%;
@@ -59,16 +59,44 @@ img{
   width: 90%;
   background-color: #76bec7;
   color: black;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
-h2{opacity: none;}
-p{opacity: 1;}
+.contenidoimg:hover{
+  opacity: 1;
+}
 
+/*Rest of Content*/
 
+.playa{
+  background-color:darkslategray;
+}
+.parque{
+  
+  background-color:darkslateblue;
+}
+.rio{
+  background-color:darkslategrey;
+}
 
+.contenido{
+  display: inline-block;
+  width: 100%;
+}
 
+.imagen-principal{
+  display: none;
+}
 
+.descripcion{
+  display: block;
+  width: 100%;
+}
+
+.imagen-secundaria{
+  display: block;
+  width: 100%;  
+}
 
 /* Tablets */
 @media (min-width: 768px) {
@@ -86,12 +114,35 @@ p{opacity: 1;}
     text-align: left;
   }
   /*Main Items*/
+  /*Principal Item*/
   .contenidoimg{
     position: absolute;
     margin-left: 4%;
     margin-right: 4%;
     margin-top: 25%;
     width: 80%;
+  }
+  /*Rest Items*/
+  .imagen-principal{
+    display: none;
+  }
+  
+  .descripcion{
+    display: inline-block;
+    position: relative;
+    top:-120px;
+    width: 49%;
+  }
+  
+  .imagen-secundaria{
+    display: inline-block;
+    width: 49%;  
+  }
+
+  .imgc{
+    border-radius: 10%;
+    margin: 5%;
+    width: 90%;
   }
 
 }
@@ -111,10 +162,32 @@ p{opacity: 1;}
     text-align: right;
   }
   /*Main Items*/
+  /*Principal Item*/
   .contenidoimg{
     position: absolute;
     margin-left: 15%;
     margin-right: 15%;
     width: 50%;
+  }
+  /*Rest Items*/
+  .imagen-principal{
+    display: inline-block;
+    width: 33%;
+  }
+  
+  .descripcion{
+    display: inline-block;
+    position: relative;
+    top:-70px;
+    width: 32%;
+  }
+  
+  .imagen-secundaria{
+    display: inline-block;
+    width: 33%;  
+  }
+
+  .imgc{
+    border-radius: 10%;
   }
 }
