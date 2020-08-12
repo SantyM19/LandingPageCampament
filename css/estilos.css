@@ -4,7 +4,6 @@
   --Topic:burlywood;
 }
 
-
 body{
     color: var(--Topic);
     background-color: var(--black);
@@ -38,6 +37,10 @@ li{
 a{
   text-decoration: none;
   color: var(--black);
+}
+
+a:hover{
+  color:gray;
 }
 
 /*Main Items*/
@@ -96,8 +99,13 @@ img{
 }
 
 .imagen-principal:hover{
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
+  -webkit-filter: invert(50%);
+  filter: invert(20%);
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  transform:scale(1.1)
 }
 
 .descripcion{
@@ -113,6 +121,11 @@ img{
 .imagen-secundaria:hover{
   -webkit-filter: hue-rotate(45deg);
   filter: hue-rotate(45deg);
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  transform:scale(1.1)
 }
 
 /*Footer*/
